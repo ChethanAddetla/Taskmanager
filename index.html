@@ -1,0 +1,38 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="board">
+    <!-- Columns for task statuses -->
+    <div class="column" data-status="not-started">
+      <h2 class ="heading"style=" background-color: #FFCCD1">Not Started <span class="count">3</span></h2>
+      <!-- Tasks will be added here -->
+      <div class="card"  id = '4'draggable="true" ondragstart="drag(event)">Card 4</div>
+      <div class="card"  id = '1' draggable="true" ondragstart="drag(event)">Card 1</div>
+      <div class="card"  id = '5'draggable="true" ondragstart="drag(event)">Card 5</div>
+      <button class="new-task" >New</button>
+    </div>
+    <div class="column" data-status="in-progress">
+      <h2 class ="heading" style=" background-color: #FBEECB">In Progress <span class="count">1</span></h2>
+      <!-- Tasks will be added here -->
+      <div class="card"  id = '2' draggable="true" ondragstart="drag(event)">Card 2</div>
+    
+      <button class="new-task">New</button>
+    </div>
+    <div class="column" data-status="completed">
+      <h2  class ="heading" style=" background-color:#CCE7E1 ">Completed <span class="count">1</span></h2>
+      <!-- Tasks will be added here -->
+      <div class="card"  id = '3' draggable="true" ondragstart="drag(event)">Card 3</div>
+      <button class="new-task">New</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

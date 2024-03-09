@@ -1,0 +1,52 @@
+/* style.css */
+/* Add this to your style.css */
+#board {
+    display: flex;
+  }
+
+.heading{
+    display: inline-block;
+    width: 380px;
+}
+.column {
+    flex: 1; /* This will ensure each column takes up equal width */
+    /* Adjust margin as needed */
+    width: 420px;
+    padding: 10px;
+    min-height: 300px;
+    display: inline-block;
+  }
+  /* style.css */
+  
+  .card{
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 380px;
+   
+   
+  }
+ .heading{
+    width: 150px;
+    border-radius: 4px;
+    text-align: center;
+ }
+  
+  .task {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .new-task {
+    display: block;
+    margin-top: 10px;
+  }
+  .bord{
+    display: inline-block;
+    margin: 20px;
+  }
+ 
